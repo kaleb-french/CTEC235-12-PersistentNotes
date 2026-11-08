@@ -9,3 +9,6 @@ It is helpful to test file writes with a console print to show they are actually
 
 Phase 3-
 When attempting a readAsString() on a file that doesn't exist will throw a FileSystemExecption because it doesn't exist. Wrapping in the Try/Catch allows us to catch this error to keep this execption from happening and provide a message instead.
+
+Phase 4-
+Ran through various tests with no issues.
