@@ -20,9 +20,12 @@ class NoteStorage {
     await file.writeAsString(text);
   }
 
-  // Read text from the file.
-  Future<String> readRawContent() async {
-    final file = await _localFile;
-    return await file.readAsString();
+  Future<String> readNote() async {
+    try {
+      final file = await _localFile;
+      return await file.readAsString();
+    } catch (e) {
+      return 'No notes saved yet.';
+    }
   }
 }

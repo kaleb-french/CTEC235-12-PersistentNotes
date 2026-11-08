@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'note_storage.dart';
+import 'note_section.dart';
 
 void main() {
   runApp(const MyApp());
